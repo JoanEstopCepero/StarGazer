@@ -164,8 +164,10 @@ Aquest enfocament va permetre una identificació i emparellament precisos de les
 ![robot](https://github.com/OriolGarriga/STARGAZER/assets/92922777/526839d6-93e4-4e03-9687-9fa70c12348c)
 
 # 3D
-You can find a folder named [3D](https://github.com/OriolGarriga/STARGAZER/tree/main/3D) with all the 3D modeling. Here is the main 3D model:
-![3dgiulytramega](https://github.com/OriolGarriga/STARGAZER/assets/92922777/f8958bb6-8eff-465c-8ec5-d2a4c90dbb47)
+You can find a folder named [3D](https://github.com/JoanEstopCepero/StarGazer/tree/main/3D) with all the 3D modeling. Here is the main 3D model:
+<p align="center">
+  <img src="https://github.com/JoanEstopCepero/StarGazer/blob/main/img/3d%20model.gif" width="500" />
+</p>
 
 # Video
 https://youtu.be/jfED0y5So1w
