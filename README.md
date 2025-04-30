@@ -128,10 +128,14 @@ Hardware:
 - Laser
 
 # Project Module
-![WhatsApp Image 2024-06-26 at 11 40 23](https://github.com/OriolGarriga/STARGAZER/assets/92922777/9694a249-1c54-4d67-a081-bf3eca16fb1c)
+<p align="center">
+  <img src="https://github.com/JoanEstopCepero/StarGazer/blob/main/img/diagrama_de_m%C3%B2duls.jpeg" width="500" />
+</p>
 
 # Hardware Architecture
-![fritzing](https://github.com/OriolGarriga/STARGAZER/assets/92922777/8e495ad5-0d3c-4c73-a881-31e9ede22863)
+<p align="center">
+  <img src="https://github.com/JoanEstopCepero/StarGazer/blob/main/img/fritzing.png" width="500" />
+</p>
 
 # Algorithms
 - Text to Speech i Speech to Text
