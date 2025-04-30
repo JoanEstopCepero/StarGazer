@@ -13,6 +13,8 @@ __Star Gazer__  is an interactive robotic system powered by a Raspberry Pi, desi
 - **Photo analysis**: upload a photo via the app or capture one using the robot’s built-in camera. StarGazer will identify and label the visible constellations and stars directly on the image.
 - **Educational and engaging**: ideal for learning about astronomy in a tangible, user-friendly way.
 
+To test the accuracy and functionality of the prototype—especially given the limited power of the laser—we built a custom observation dome. Inside this dome, we hand-drew the constellations to simulate the night sky. We used the Stellarium application to obtain the correct orientation angles for each star, allowing us to position them as they would appear in real celestial coordinates. This setup allowed us to validate that the robot could accurately point to the intended stars and constellations within a controlled environment.
+
 Whether you're just getting into astronomy or simply fascinated by the night sky, StarGazer is here to help you spot and learn about the stars above. The idea behind this robot is to make it easier and more fun for anyone interested in the cosmos to actually see and understand the stars, constellations, and planets in the sky.
 
 # TABLE OF CONTENTS
