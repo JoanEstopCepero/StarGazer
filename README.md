@@ -16,17 +16,17 @@ __Star Gazer__  is an interactive robotic system powered by a Raspberry Pi, desi
 Whether you're just getting into astronomy or simply fascinated by the night sky, StarGazer is here to help you spot and learn about the stars above. The idea behind this robot is to make it easier and more fun for anyone interested in the cosmos to actually see and understand the stars, constellations, and planets in the sky.
 
 # TABLE OF CONTENTS
-- [Hardware Requirements](https://github.com/OriolGarriga/STARGAZER/tree/main?tab=readme-ov-file#hardware-requirements)
-- [Software Requirements](https://github.com/OriolGarriga/STARGAZER/tree/main?tab=readme-ov-file#software-requirements)
-- [Documentation](https://github.com/OriolGarriga/STARGAZER/tree/main?tab=readme-ov-file#documentation)
-- [Project Module](https://github.com/OriolGarriga/STARGAZER/tree/main?tab=readme-ov-file#project-module)
-- [Hardware Architecture](https://github.com/OriolGarriga/STARGAZER/tree/main?tab=readme-ov-file#hardware-architecture)
-- [Algorithms](https://github.com/OriolGarriga/STARGAZER/blob/main/README.md#algorithms)
-- [Images](https://github.com/OriolGarriga/STARGAZER/tree/main?tab=readme-ov-file#images)
-- [3D](https://github.com/OriolGarriga/STARGAZER/tree/main?tab=readme-ov-file#3d)
-- [Video](https://github.com/OriolGarriga/STARGAZER/tree/main?tab=readme-ov-file#video)
-- [References](https://github.com/OriolGarriga/STARGAZER/tree/main?tab=readme-ov-file#references)
-- [Authors](https://github.com/OriolGarriga/STARGAZER/tree/main?tab=readme-ov-file#authors)
+- [Hardware Requirements](https://github.com/JoanEstopCepero/StarGazer/tree/main?tab=readme-ov-file#hardware-requirements)
+- [Software Requirements](https://github.com/JoanEstopCepero/StarGazer/tree/main?tab=readme-ov-file#software-requirements)
+- [Documentation](https://github.com/JoanEstopCepero/StarGazer/tree/main?tab=readme-ov-file#documentation)
+- [Project Module](https://github.com/JoanEstopCepero/StarGazer/tree/main?tab=readme-ov-file#project-module)
+- [Hardware Architecture](https://github.com/JoanEstopCepero/StarGazer/tree/main?tab=readme-ov-file#hardware-architecture)
+- [Algorithms](https://github.com/JoanEstopCepero/StarGazer/blob/main/README.md#algorithms)
+- [Images](https://github.com/JoanEstopCepero/StarGazer/tree/main?tab=readme-ov-file#images)
+- [3D](https://github.com/JoanEstopCepero/StarGazer/tree/main?tab=readme-ov-file#3d)
+- [Video](https://github.com/JoanEstopCepero/StarGazer/tree/main?tab=readme-ov-file#video)
+- [References](https://github.com/JoanEstopCepero/StarGazer/tree/main?tab=readme-ov-file#references)
+- [Authors](https://github.com/JoanEstopCepero/StarGazer/tree/main?tab=readme-ov-file#authors)
 
 # Hardware Requirements
 - Raspberry Pi 3b
