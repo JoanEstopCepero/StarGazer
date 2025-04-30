@@ -1,4 +1,6 @@
-<img src="https://github.com/JoanEstopCepero/StarGazer/blob/main/img/StarGazer.gif" width="300" height="300" />
+<p align="center">
+  <img src="https://github.com/JoanEstopCepero/StarGazer/blob/main/img/StarGazer.gif" width="500" />
+</p>
 
 # STARGAZER
 
