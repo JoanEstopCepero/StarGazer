@@ -4,7 +4,18 @@
 
 # STARGAZER
 
-__Star Gazer__ is an educational robot designed to visualize stars. Using a laser and a mobile application, it displays the planets, stars, and constellations selected by the user. Star Gazer points to all the stars and planets that can be seen at the location and time when the user is using it, in addition to showing the description of everything that is pointed to in the application.
+__Star Gazer__  is an interactive robotic system powered by a Raspberry Pi, designed to help users visualize stars, constellations, and planets in real time. Equipped with a laser pointer, the robot can physically point to celestial objects visible from the user's current location and time, creating a hands-on stargazing experience.
+
+Features:
+Laser-guided pointing of visible stars, constellations, and planets based on geolocation and time.
+
+Dual control modes: interact with the robot via a mobile application or voice commands.
+
+Photo analysis: upload a photo via the app or capture one using the robot’s built-in camera. StarGazer will identify and label the visible constellations and stars directly on the image.
+
+Educational and engaging: ideal for learning about astronomy in a tangible, user-friendly way.
+
+Whether you're just getting into astronomy or simply fascinated by the night sky, StarGazer is here to help you spot and learn about the stars above. The idea behind this robot is to make it easier and more fun for anyone interested in the cosmos to actually see and understand the stars, constellations, and planets in the sky.
 
 # TABLE OF CONTENTS
 - [Hardware Requirements](https://github.com/OriolGarriga/STARGAZER/tree/main?tab=readme-ov-file#hardware-requirements)
