@@ -160,7 +160,9 @@ Once the input image was aligned with the reference using homography, we applied
 
 As a result, the user can clearly see the constellation as it appears in their own sky photo, with the star connections visualized in place—bringing the abstract patterns of the stars into a concrete, personalized view.
 
-![Captura de pantalla 2024-06-26 141651](https://github.com/OriolGarriga/STARGAZER/assets/92922777/a1ab8d51-0c8c-4c05-a0cf-4882d490b0d9)
+<p align="center">
+  <img src="https://github.com/JoanEstopCepero/StarGazer/blob/main/img/constellation%20detection.png" width="500" />
+</p>
 
 ## From Location and Time to Stepper Motor Angles
 
