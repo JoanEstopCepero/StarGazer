@@ -165,7 +165,18 @@ Aquest enfocament va permetre una identificació i emparellament precisos de les
   
 
 # Images
-![robot](https://github.com/OriolGarriga/STARGAZER/assets/92922777/526839d6-93e4-4e03-9687-9fa70c12348c)
+<p align="center">
+  <img src="https://github.com/JoanEstopCepero/StarGazer/blob/main/img/cupula%20img.jpeg" width="500" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/JoanEstopCepero/StarGazer/blob/main/img/robot%20%2B%20cupula.jpeg" width="500" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/JoanEstopCepero/StarGazer/blob/main/img/robot_i_c%C3%BApula.jpeg" width="500" />
+</p>
+
 
 # 3D
 You can find a folder named [3D](https://github.com/JoanEstopCepero/StarGazer/tree/main/3D) with all the 3D modeling. Here is the main 3D model:
