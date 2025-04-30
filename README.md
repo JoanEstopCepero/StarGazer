@@ -138,31 +138,39 @@ Hardware:
 </p>
 
 # Algorithms
-- Text to Speech i Speech to Text
-  Implementat a l'assignatura de Sistemes Multimedia. Basicament utilitzem les APIs de Google de Text to Speech i Speech to Text per poder comunicar-nos amb el robot. És una eina essencial perquè la pantalla no ens enlluerni si estem a les fosques observant els cossos celestes.
-  
-- Detecció de constel·lacions a partir de punts
-  Per a la identificació i emparellament de constel·lacions en imatges, vam abordar dos problemes principals. A continuació es detalla el procés i les solucions implementades per a cadascun d'ells.
+## Voice Communication
 
-1. Detecció de la Constel·lació
-El primer repte consistia a identificar quina constel·lació es mostrava a la imatge presa. Per solucionar-ho, vam decidir implementar una homografia que ens permetés detectar la constel·lació més semblant, a més de determinar els graus de rotació i els ajustos d'escala necessaris per alinear-la exactament amb la constel·lació de referència.
+A voice communication feature was implemented using Google’s **Speech-to-Text** and **Text-to-Speech** APIs. This allows users to interact with the robot through spoken commands, enabling a hands-free and more natural user experience. The robot can interpret voice inputs and respond with synthesized speech, creating a more intuitive interface for controlling its functions.
 
-No obstant això, vam trobar un problema amb l'algorisme RANSAC, que necessitava detectar cantonades i punts específics per fer la comparació amb les imatges de referència. Com que les imatges només contenien punts d'estrelles, no trobava prou elements de referència.
+## Constellation Detection from Sky Photographs
 
-Per solucionar aquest problema, vam modificar tant les imatges de referència com la imatge d'entrada afegint totes les connexions entre els punts. D'aquesta manera, les imatges es transformaven en grafes en lloc de només punts, permetent que l'homografia funcionés perfectament.
+This feature enables the robot to identify and visualize constellations directly from user-provided images of the night sky, whether taken with the robot’s onboard camera or uploaded via the mobile app. To achieve this, we had to solve two main problems:
 
-2. Emparellament d'Estrelles
-Una vegada realitzada l'homografia, el següent pas era emparellar les estrelles de la imatge d'entrada amb les estrelles de la imatge de referència. Per fer-ho, vam utilitzar l'algoritme KDTree, que ens va permetre realitzar l'emparellament de manera eficient.
+### 1. Identifying the Constellation in the Input Image
 
-Després de l'emparellament, ja sabíem quina estrella corresponia a cada punt en la imatge d'entrada. Amb aquesta informació i tenint emmagatzemades a la base de dades les connexions necessàries per dibuixar la constel·lació, vam poder traçar aquestes connexions sobre la imatge original. Així, l'usuari podia veure clarament les connexions de la constel·lació en el seu cel.
+The first challenge was determining which constellation appears in the image. To do this, we implemented a **homography-based matching system**, which compares the input image to reference constellation images. The homography helps not only in identifying the most likely matching constellation, but also in estimating the **rotation angle**, **scaling factor**, and **alignment** needed to overlay the reference constellation onto the input image correctly.
 
-Aquest enfocament va permetre una identificació i emparellament precisos de les constel·lacions, millorant significativament la usabilitat i la precisió de les nostres eines d'observació astronòmica.
+Initially, our approach used **RANSAC** to detect key points and corners for feature matching. However, since the sky images mainly contain isolated star points (rather than textured features), RANSAC failed to find enough reference points for accurate homography estimation.
+
+To overcome this, we enhanced both the reference images and the input image by **connecting the stars with their known constellation lines**, effectively transforming the visuals from sparse points into structured graphs. This approach significantly improved feature detection and allowed the homography to perform successfully.
+
+### 2. Matching Stars to Draw the Constellation Overlay
+
+Once the input image was aligned with the reference using homography, we applied a **KD-tree algorithm** to match the stars in the input image with those in the reference constellation. After establishing the correspondences, we used a predefined database of star connections (the line segments that define the shape of the constellation) to draw those lines **directly onto the original sky photo**.
+
+As a result, the user can clearly see the constellation as it appears in their own sky photo, with the star connections visualized in place—bringing the abstract patterns of the stars into a concrete, personalized view.
 
 ![Captura de pantalla 2024-06-26 141651](https://github.com/OriolGarriga/STARGAZER/assets/92922777/a1ab8d51-0c8c-4c05-a0cf-4882d490b0d9)
 
-- Pas d'ubicació, temps i coordenades a angles de Stepper Motor
-  Amb les coordenades, data i hora introduït per l'usuari i la RA i DEC de l'estrella que hem cercat, guardat a la base de dades de firestore, podem fer uns calculs per obtenir la azimut i la altitud, la azimut representa l'eix X i la altitud eix Y. Amb aquests calculs el robot sap on s'ha de moure per apuntar a l'estrella que l'usuari ha demanat.
-  
+## From Location and Time to Stepper Motor Angles
+
+Using the **user's input** (geographic coordinates, date, and time) along with the **Right Ascension (RA)** and **Declination (DEC)** of the selected star—retrieved from a Firestore database—we calculate the **azimuth** and **altitude** angles required to point the robot's laser accurately.
+
+In this system:
+- **Azimuth** corresponds to the **horizontal (X-axis)** direction,
+- **Altitude** corresponds to the **vertical (Y-axis)** elevation.
+
+With these two angles computed, the robot converts them into **stepper motor movements**, allowing it to physically aim at the celestial object requested by the user. This transformation from astronomical coordinates to motor control enables precise and automated star pointing.
 
 # Images
 <p align="center">
